@@ -14,7 +14,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 @Service(version = "1.0.0")
 public class CityDubboServiceImpl implements CityDubboService {
 
-    public City findCityByName(String cityName) {
-        return new City(1L,2L,"温岭","是我的故乡");
+    @Override
+    public int findCityByName(String cityName) {
+
+        return 1;
     }
 }
